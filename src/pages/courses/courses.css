@@ -1,0 +1,38 @@
+/* Styles for Courses Section */  
+
+.courses {  
+    background-image: url('../../assets/images/galaxy-3608029.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    text-align: center;  
+    color: white;  
+    padding: 20px 0; /* Added padding top and bottom, adjusted for header/footer spacing */  
+}  
+
+.courses h2 {  
+    font-size: 2rem;   
+    color: #f4cb72; /* Color for the title */  
+    margin-bottom: 20px;  
+}  
+
+.course-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center; /* Centering the course cards */  
+    gap: 10px; /* Maintain spacing between cards */  
+    max-width: 1200px;  
+    margin: 0 auto;  
+}  
+
+/* Responsive styles in course.css */  
+@media (max-width: 768px) {  
+    .courses h2 {  
+        font-size: 1.75rem; /* Reduce title size on medium screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .courses h2 {  
+        font-size: 1.5rem; /* Adjust title size for small screens */  
+    }  
+}

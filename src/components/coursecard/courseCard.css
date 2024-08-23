@@ -1,0 +1,74 @@
+/* Styles for Course Cards */  
+
+.course-container {  
+    display: flex;  
+    flex-wrap: wrap; /* Allow wrapping of cards */  
+    justify-content: center; /* Center cards instead of space-between for better alignment */  
+    margin: 0 -10px; /* Update to ensure consistent spacing */  
+}  
+
+.course-card {  
+    background: rgba(232, 147, 147, 0.222); /* Background color with opacity */  
+    border-radius: 10px; /* Rounded corners */  
+    padding: 20px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */  
+    overflow: hidden; /* Prevent overflow of children */  
+    box-sizing: border-box; /* Include padding and borders in width */  
+    backdrop-filter: blur(10px); /* Frosted glass effect */  
+    margin: 10px; /* Add margin around cards for spacing */  
+}  
+
+.course-card:hover {  
+    transform: translateY(-5px); /* Elevate card on hover */  
+}  
+
+.course-image {  
+    width: 100%; /* Full width for the image */  
+    height: 200px; /* Fixed height for uniformity */  
+    object-fit: cover; /* Ensure the image covers the area without distortion */  
+    border-radius: 10px; /* Rounded corners for the image */  
+    margin-bottom: 15px; /* Spacing below the image */  
+}  
+
+
+.course-card h3 {  
+    text-align: center;  
+    margin: 10px 0; /* Spacing above and below title */  
+    font-size: 1.5rem; /* Font size for title */  
+    color: #091e44; /* Contrasting color */  
+}  
+
+.course-card p {  
+    margin: 5px 0; /* Spacing above and below paragraphs */  
+    color: #fff; /* Text color */  
+    font-size: 1rem; /* Font size for paragraphs */  
+}  
+
+/* Responsive Styles in coursecard.css */  
+@media (max-width: 768px) {  
+    .course-card {  
+        width: calc(50% - 20px); /* 2 cards per row on tablets */  
+    }  
+
+    .course-card h3 {  
+        font-size: 1.25rem; /* Reduce title font size on smaller screens */  
+    }  
+
+    .course-card p {  
+        font-size: 0.9rem; /* Reduce paragraph font size on smaller screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .course-card {  
+        width: calc(100% - 20px); /* Full width for small screens */  
+    }  
+
+    .course-card h3 {  
+        font-size: 1.1rem; /* Further reduce title font size */  
+    }  
+
+    .course-card p {  
+        font-size: 0.8rem; /* Further reduce paragraph font size */  
+    }  
+}

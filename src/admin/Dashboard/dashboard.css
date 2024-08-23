@@ -1,0 +1,63 @@
+/* Container for the main content */
+.main-content {  
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center align boxes horizontally */
+    padding: 20px;
+    flex-direction: row; /* Default to horizontal layout */
+}
+
+/* Box styles */
+.box {  
+    background-color: #f9f9f9; /* light gray background */  
+    border: 1px solid #ddd; /* light border */  
+    border-radius: 8px; /* rounded corners */  
+    padding: 15px;  
+    margin: 10px; /* spacing between boxes */  
+    width: 30%; /* Width of the box, 3 boxes will fit in the row */  
+    max-width: 300px; /* optional max width */  
+    text-align: center; /* center text */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */  
+    transition: transform 0.3s, box-shadow 0.3s; /* transition for hover effect */  
+}
+
+/* Hover effect */
+.box:hover {  
+    transform: translateY(-5px); /* move box up on hover */  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* add heavier shadow */  
+}
+
+/* Heading styles for text inside boxes */
+.box p {  
+    margin: 5px 0; /* spacing between paragraphs */  
+    font-size: 20px; /* heading font size */  
+}
+
+/* Specific styling for the headings */
+.box p:first-child {  
+    font-weight: bold; /* make the first paragraph bold */  
+    color: #333; /* dark gray color */  
+}
+
+/* General paragraph styling */
+.box p:last-child {  
+    font-size: 24px; /* larger font size for the stats */  
+    color: #007bff; /* Bootstrap primary color */  
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {  
+    .main-content {
+        flex-direction: column; /* Change to vertical layout on medium screens */
+    }
+    .box {  
+        width: 45%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 600px) {  
+    .box {  
+        width: 90%; /* Take up more width on small screens */  
+        margin: 10px auto; /* Center boxes with auto margins */
+    }
+}

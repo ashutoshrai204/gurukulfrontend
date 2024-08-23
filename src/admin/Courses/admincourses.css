@@ -1,0 +1,96 @@
+/* Container for the entire admin courses section */
+.admin-courses {
+  padding: 20px;
+  display: flex;
+  flex-direction: row; /* Display content side by side */
+  justify-content: space-between; /* Ensure space between left and right sections */
+}
+
+.admin-ttitle {
+  color: antiquewhite;
+}
+
+/* Wrapper for the left content inside the admin courses section */
+.baanya {
+  flex: 2; /* Make baanya take up more space */
+  margin-right: 20px; /* Add space between baanya and daanya */
+  max-width: 1200px;
+}
+
+/* Wrapper for the right content inside the admin courses section */
+.daanya {
+  flex: 1; /* Make daanya take up less space */
+  max-width: 400px; /* Limit the width of the daanya section */
+  margin-right: 20px; /* Ensure some space from the right edge */
+}
+
+/* Add background blur effect for the form container */
+.add-course {
+  background: rgba(215, 140, 140, 0.1); /* Slightly transparent background */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.add-course:hover {
+  background: rgba(215, 140, 140, 0.2); /* Slightly darker on hover */
+  backdrop-filter: blur(15px); /* Increase blur on hover */
+  transform: scale(1.05); /* Slightly enlarge the element on hover */
+}
+
+
+/* Media query for large screens (less than 1200px wide) */
+@media (max-width: 1200px) {
+  .course-card {
+      flex: 1 1 calc(50% - 40px); /* Adjust to two cards per row */
+  }
+}
+
+/* Media query for medium screens (less than 900px wide) */
+@media (max-width: 900px) {
+  .course-card {
+      flex: 1 1 calc(50% - 40px); /* Continue with two cards per row */
+  }
+
+  .admin-courses {
+      flex-direction: column; /* Stack baanya and daanya vertically */
+  }
+
+  .baanya {
+      margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .daanya {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      max-width: 100%;
+  }
+}
+
+/* Media query for small screens (less than 600px wide) */
+@media (max-width: 600px) {
+  .course-card {
+      flex: 1 1 100%; /* Stack cards vertically */
+      margin: 10px 0;
+  }
+
+  .admin-courses {
+      padding: 10px; /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack baanya and daanya vertically */
+  }
+
+  .baanya {
+      flex: none; /* Ensure baanya content takes up full width */
+      margin-right: 0; /* Remove any extra spacing */
+  }
+
+  .daanya {
+      flex: none; /* Ensure daanya content takes up full width */
+      max-width: 100%; /* Allow daanya to take full width */
+      margin-top: 20px; /* Add some space between baanya and daanya */
+  }
+  
+  .add-course {
+    padding: 15px; /* Slightly reduce padding for smaller screens */
+  }
+}

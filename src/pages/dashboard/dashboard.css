@@ -1,0 +1,87 @@
+/* dashboard.css */  
+
+.student-dashboard {  
+   
+    padding: 20px;  
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Space background image */  
+    background-size: cover;  
+    background-position: center;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease;  
+}  
+
+.student-dashboard h2 { 
+    font-weight: bold;
+    font-size: 24px;  
+    margin-bottom: 20px;  
+    color: #f9f4f4; /* Darker text for emphasis */  
+    text-align: center; /* Centered header */  
+}  
+
+.dashboard-content {  
+    display: flex;  
+    flex-wrap: wrap; /* Allows cards to wrap in case of overflow */  
+    justify-content: center; /* Centers the cards in the row */  
+    gap: 20px; /* Space between cards */  
+}  
+
+.dashboard-content p {  
+    font-size: 18px;  
+    color: #fff; /* Medium text for 'No Courses' message */  
+    text-align: center; /* Centered no courses message */  
+    width: 100%; /* Ensure it takes the full width if courses are not present */  
+}  
+@media (max-width: 992px) {  
+    .student-dashboard {  
+        padding: 10px; /* Further reduced padding on smaller screens */  
+    }  
+
+    .dashboard-content {  
+        gap: 15px; /* Reduced gap for better fit */  
+    }  
+
+    .student-dashboard h2 {  
+        font-size: 20px; /* Further decrease title font size */  
+    }  
+
+    .dashboard-content p {  
+        font-size: 16px; /* Adjust message font size */  
+    }  
+}  
+
+@media (max-width: 768px) {  
+    .student-dashboard {  
+        padding: 10px; /* Consistent padding for smaller screens */  
+    }  
+
+    .student-dashboard h2 {  
+        font-size: 18px; /* Smaller title font size */  
+    }  
+
+    .dashboard-content {  
+        flex-direction: column; /* Stacks the cards vertically */  
+        align-items: center; /* Center align cards in column */  
+    }  
+
+    .dashboard-content p {  
+        font-size: 14px; /* Smaller message font size */  
+    }  
+}  
+
+@media (max-width: 576px) {  
+    .student-dashboard {  
+        padding: 5px; /* Minimal padding on very small screens */  
+    }  
+
+    .student-dashboard h2 {  
+        font-size: 16px; /* Further decrease title font size */  
+    }  
+
+    .dashboard-content {  
+        gap: 10px; /* Further reduce gap */  
+    }  
+
+    .dashboard-content p {  
+        font-size: 14px; /* Consistent message font size */  
+    }  
+}  

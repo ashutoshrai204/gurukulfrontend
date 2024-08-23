@@ -1,0 +1,69 @@
+.payment-success-page {  
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Set the background image */  
+    background-size: cover; /* Cover the entire background */  
+    background-position: center; /* Center the background image */  
+    height: 100vh; /* Full viewport height */  
+    display: flex; /* Flexbox for centering */  
+    align-items: center; /* Center content vertically */  
+    justify-content: center; /* Center content horizontally */  
+    color: rgb(15, 225, 64); /* Text color */  
+    text-align: center; /* Center text */  
+    padding: 20px; /* Add padding */  
+}  
+
+.payment-success-page a {  
+    text-decoration: none; /* Remove underline from links */  
+}  
+
+.success-message {  
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */  
+    border-radius: 10px; /* Round the corners */  
+    padding: 20px; /* Inner padding */  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8); /* Strong shadow for depth */  
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */  
+    width: 100%; /* Use full width of its parent container */  
+    max-width: 400px; /* Optional: Set a maximum width */  
+    box-sizing: border-box; /* Include padding in width calculations */  
+}  
+
+.success-message:hover {  
+    transform: scale(1.05); /* Slightly enlarge the success message on hover */  
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 1); /* Increase shadow depth on hover */  
+}  
+
+/* Common button styles */  
+
+
+@media (max-width: 768px) {  
+    .payment-success-page {  
+        padding: 10px; /* Reduce padding on smaller screens */  
+    }  
+
+    .success-message {  
+        padding: 15px; /* Adjust padding for the success message */  
+    }  
+
+    .comman-btn {  
+        padding: 8px 16px; /* Adjust padding for button on smaller screens */  
+        font-size: 14px; /* Adjust font size for button */  
+        width: 75%; /* Ensure button fits within the container on smaller screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .payment-success-page {  
+        height: auto; /* Allow height to adjust */  
+        padding: 5px; /* Further reduce padding */  
+    }  
+
+    .success-message {  
+        padding: 10px; /* Smaller padding for mobile */  
+        font-size: 14px; /* Adjust font size for smaller screens */  
+    }  
+
+    .comman-btn {  
+        padding: 6px 12px; /* Smaller padding for button on extra small screens */  
+        font-size: 12px; /* Adjust font size for button */  
+        width: calc(100% - 12px); /* Ensure button width is responsive */  
+    }  
+}

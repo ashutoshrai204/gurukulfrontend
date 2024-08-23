@@ -1,0 +1,79 @@
+/* testimonials.css */  
+.testimonials {  
+    padding: 40px 20px; /* Padding for spacing */  
+    background: linear-gradient(to bottom, #003366 0%, #000000 100%); /* Gradient from dark blue to black */  
+    color: white; /* Text color for better contrast on the dark background */  
+    text-align: center; /* Center text alignment */  
+}  
+
+.testimonials h2 {  
+    font-size: 2.5em;  
+    margin-bottom: 30px;  
+}  
+
+.testimonials-cards {  
+    display: flex;  
+    flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */  
+    justify-content: center; /* Centering testimonials horizontally */  
+}  
+
+.testimonial-card {  
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background for cards */  
+    border-radius: 10px;  
+    padding: 20px;  
+    margin: 10px; /* Space between cards */  
+    max-width: 300px; /* Limit card width */  
+    width: calc(25% - 20px); /* Ensures four cards in a row on larger screens */  
+    display: flex;  
+    flex-direction: column; /* Stacking elements vertically */  
+    align-items: center; /* Centering content inside card */  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */  
+    transition: transform 0.3s; /* Transition effect on hover */  
+}  
+
+.testimonial-card:hover {  
+    transform: translateY(-5px); /* Lift effect on hover */  
+}  
+
+.student-image img {  
+    border-radius: 50%; /* Circular images */  
+    width: 80px; /* Consistent image size */  
+    height: 80px; /* Consistent image size */  
+}  
+
+.message {  
+    color: #ccc;
+    font-style: italic; /* Style for testimonial message */  
+    margin: 15px 0; /* Margin for spacing */  
+}  
+
+.info {  
+    text-align: center; /* Centering text in info section */  
+}  
+
+.name {  
+    color: #ccc;
+    font-weight: bold; /* Bold name */  
+}  
+
+.position {  
+    font-size: 0.9em; /* Smaller position text */  
+    color: #ccc; /* Light gray color for position */  
+}  
+
+/* Responsive adjustments */  
+@media (max-width: 768px) {  
+    .testimonial-card {  
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */  
+    }  
+
+    .testimonials h2 {  
+        font-size: 2em; /* Smaller heading on smaller screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .testimonial-card {  
+        width: 100%; /* One card per row on very small screens */  
+    }  
+}

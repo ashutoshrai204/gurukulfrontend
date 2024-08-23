@@ -1,0 +1,150 @@
+.course-description {  
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Use the desired background image */  
+    background-size: cover;  
+    background-position: center;  
+    color: white; /* Text color */  
+    padding: 20px 0; /* Padding for the header/footer spacing */  
+    text-align: center; /* Center the text */  
+    position: relative; /* For positioning child elements */  
+    overflow: hidden; /* Prevent overflow of inner elements */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align vertically if needed */
+    height: 100vh; /* Optional: full viewport height for perfect centering */  
+}  
+
+/* Add styles for course contain */  
+.course-contain {  
+    width: 500px;
+    background-color: rgba(240, 127, 127, 0.152); /* Semi-transparent background */  
+    border-radius: 10px; /* Round the corners */  
+    padding: 20px; /* Add padding for inner spacing */  
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition effects for hover */  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Optional: add some shadow for depth */  
+}  
+
+.course-contain:hover {  
+    transform: translateY(-5px); /* Lift effect on hover */  
+    opacity: 1; /* Ensure full opacity when hovered */  
+}  
+
+.course-header {  
+    position: relative; /* Allow absolute positioning of child elements */  
+    z-index: 1; /* Ensure content appears above the background */  
+}  
+
+.course-imagee {  
+    width: 100%; /* Adjust to fit the container */  
+    max-width: 400px; /* Set a max width to prevent stretching */  
+    height: auto; /* Maintain aspect ratio */  
+    border-radius: 10px; /* Rounded corners */  
+    margin-bottom: 15px; /* Spacing below the image */  
+}  
+
+.course-info {  
+    margin-bottom: 15px; /* Spacing between sections */  
+}  
+
+/* Button Styles */  
+.comman-bttn {  
+    display: inline-block; /* Keep button as inline-block */  
+    padding: .75rem 0; /* Adjust padding for aesthetics */  
+    border-radius: 10rem; /* Rounded edges */  
+    color: #fff; /* Text color */  
+    text-transform: uppercase; /* Uppercase text */  
+    font-size: 1rem; /* Font size */  
+    letter-spacing: .15rem; /* Letter spacing */  
+    transition: all .3s; /* Smooth transition */  
+    position: relative; /* Position for pseudo-elements */  
+    overflow: hidden; /* Prevent overflow */  
+    z-index: 1; /* Ensure button is on top */  
+    background-color: black; /* Base background color */  
+    margin: 20px 0; /* Spacing for the button */  
+    width: 50%; /* Full width of its container */  
+}  
+
+/* Pseudo-elements for button effects */  
+.comman-bttn::before {  
+    content: '';  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 0%; /* Start with 0 width */  
+    height: 100%; /* Full height of the button */  
+    background-color: #146a05; /* Darker color for the effect */  
+    transition: all .3s; /* Smooth transition */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -1; /* Behind the text */  
+}  
+
+.comman-bttn::after {  
+    content: '';  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%; /* Full width */  
+    height: 100%; /* Full height of the button */  
+    background-color: gray; /* Background color on hover */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -2; /* Behind the button */  
+}  
+
+.comman-bttn:hover {  
+    color: #fff; /* Change text color on hover */  
+    cursor: pointer; /* Pointer cursor on hover */  
+}  
+
+.comman-bttn:hover::before {  
+    width: 100%; /* Expand the background on hover */  
+}  
+
+.comman-bttn:active {  
+    transform: translateY(1px); /* Slight press effect */  
+}  
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .course-contain {  
+        width: 70%; /* Reduce width on smaller screens */
+    }  
+}
+
+@media (max-width: 992px) {
+    .course-contain {  
+        width: 80%; /* Further reduce width on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }  
+}
+
+@media (max-width: 768px) {  
+    .course-description {  
+        padding: 15px; /* Reduced padding for smaller screens */  
+        height: auto; /* Adjust height for smaller screens */
+    }  
+
+    .course-contain {  
+        width: 90%; /* Almost full width on smaller screens */
+        padding: 10px; /* Reduce padding */  
+    }  
+
+    .course-image {  
+        max-width: 100%; /* Full width for smaller screens */  
+    }  
+
+    .comman-bttn {  
+        padding: 0.5rem 0; /* Adjust padding for smaller buttons */  
+        font-size: 0.9rem; /* Slightly smaller font size */  
+        width: 80%; /* Increase width for smaller screens */
+    }  
+}
+
+@media (max-width: 576px) {
+    .course-contain {  
+        width: 100%; /* Full width for extra small screens */
+        padding: 5px; /* Further reduce padding */
+    }  
+
+    .comman-bttn {
+        width: 100%; /* Full width button for extra small screens */
+    }
+}

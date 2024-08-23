@@ -1,0 +1,208 @@
+/* Background and Profile Styles */  
+.profile {  
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Replace with your space-themed image URL */  
+    background-size: cover; /* Use cover to fill the container */  
+    background-position: center; /* Center the image */  
+    height: 100vh; /* Full viewport height */  
+    display: flex;   
+    flex-direction: column;   
+    justify-content: center; /* Center vertically */  
+    align-items: center; /* Center horizontally */  
+    color: #FFFFFF; /* Default text color white for contrast */  
+    padding: 20px; /* Add some padding */  
+}  
+
+.profile h2 {  
+    margin-bottom: 20px; /* Space between title and content */  
+    font-size: 2rem; /* Font size for the heading */  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */  
+}  
+
+.profile-info {  
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for contrast */  
+    border-radius: 10px; /* Rounded corners */  
+    padding: 20px; /* Padding inside the info box */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */  
+    text-align: left; /* Align text to left */  
+    width: 80%; /* Set a default width for the info box */  
+    max-width: 500px; /* Limit max width for larger screens */  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */  
+}  
+
+.profile-info:hover {  
+    transform: scale(1.05); /* Slightly increase the size on hover */  
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */  
+}  
+
+.profile-info p {  
+    margin: 10px 0; /* Space between paragraphs */  
+    font-size: 1.2rem; /* Font size for the paragraphs */  
+}
+
+/* Comman Button Styles */  
+.comman-btn {  
+    display: inline-block; /* Keep it as inline-block */  
+    padding: .75rem 0; /* Adjust top and bottom padding for better aesthetics */  
+    border-radius: 10rem; /* Rounded edges */  
+    color: #fff; /* Text color */  
+    text-transform: uppercase; /* Uppercase text */  
+    font-size: 1rem; /* Font size */  
+    letter-spacing: .15rem; /* Letter spacing */  
+    transition: all .3s; /* Smooth transition */  
+    position: relative; /* Positioning for the pseudo-elements */  
+    overflow: hidden; /* Prevent overflow */  
+    z-index: 1; /* Ensure button is on top */  
+    background-color: black; /* Base background color */  
+    margin: 20px 0; /* Center the button horizontally with some spacing */  
+    width: 100%; /* Make the button take the full width of its container */  
+}  
+
+.comman-btn::before {  
+    content: '';   
+    position: absolute;   
+    bottom: 0;   
+    left: 0;   
+    width: 0%; /* Start with 0 width */  
+    height: 100%;   
+    background-color: #091e44; /* Darker background color */  
+    transition: all .3s; /* Smooth transition for width */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -1; /* Behind the text */  
+}  
+
+.comman-btn::after {  
+    content: '';  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%; /* Full width */  
+    height: 100%;  
+    background-color: gray; /* Background color on hover */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -2; /* Behind the button */  
+}  
+
+.comman-btn:hover {  
+    color: #fff; /* Change text color on hover */   
+    cursor: pointer;   
+}  
+
+.comman-btn:hover::before {  
+    width: 100%; /* Expand the background on hover */  
+}  
+
+.comman-btn:active {  
+    transform: translateY(1px); /* Slight press effect */  
+}  
+
+
+
+.comman-btnn {  
+    display: inline-block; /* Keep it as inline-block */  
+    padding: .75rem 0; /* Adjust top and bottom padding for better aesthetics */  
+    border-radius: 10rem; /* Rounded edges */  
+    color: #fff; /* Text color */  
+    text-transform: uppercase; /* Uppercase text */  
+    font-size: 1rem; /* Font size */  
+    letter-spacing: .15rem; /* Letter spacing */  
+    transition: all .3s; /* Smooth transition */  
+    position: relative; /* Positioning for the pseudo-elements */  
+    overflow: hidden; /* Prevent overflow */  
+    z-index: 1; /* Ensure button is on top */  
+    background-color: black; /* Base background color */  
+    margin: 20px 0; /* Center the button horizontally with some spacing */  
+    width: 100%; /* Make the button take the full width of its container */  
+}  
+
+.comman-btnn::before {  
+    content: '';   
+    position: absolute;   
+    bottom: 0;   
+    left: 0;   
+    width: 0%; /* Start with 0 width */  
+    height: 100%;   
+    background-color: #f10606; /* Darker background color */  
+    transition: all .3s; /* Smooth transition for width */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -1; /* Behind the text */  
+}  
+
+.comman-btnn::after {  
+    content: '';  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%; /* Full width */  
+    height: 100%;  
+    background-color: gray; /* Background color on hover */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -2; /* Behind the button */  
+}  
+
+.comman-btnn:hover {  
+    color: #fff; /* Change text color on hover */   
+    cursor: pointer;   
+}  
+
+.comman-btnn:hover::before {  
+    width: 100%; /* Expand the background on hover */  
+}  
+
+.comman-btnn:active {  
+    transform: translateY(1px); /* Slight press effect */  
+}  
+
+
+  
+/* Media Queries for Responsiveness */  
+@media (max-width: 768px) {  
+    .profile h2 {  
+        font-size: 1.8rem; /* Decrease header size on smaller screens */  
+    }  
+
+    .profile-info {  
+        width: 90%; /* Increase width on smaller screens */  
+        padding: 15px; /* Adjust padding */  
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ensure transition remains for the hover effect */  
+    }  
+
+    .profile-info:hover {  
+        transform: scale(1.03); /* Slightly less scale on hover for smaller screens */  
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6); /* Slightly less shadow on hover */  
+    }  
+
+    .profile-info p {  
+        font-size: 1.1rem; /* Slightly smaller text */  
+    }  
+
+    .comman-btn {  
+        padding: 8px 16px; /* Smaller padding for button */  
+        font-size: 0.9rem; /* Decrease button font size */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .profile h2 {  
+        font-size: 1.5rem; /* Further decrease header size */  
+    }  
+
+    .profile-info {  
+        padding: 10px; /* Further adjust padding for smaller screens */  
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Maintain transition on hover */  
+    }  
+
+    .profile-info:hover {  
+        transform: scale(1.02); /* Less scale for very small screens */  
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Less shadow for small screens */  
+    }  
+
+    .profile-info p {  
+        margin: 5px 0; /* Adjust margins for smaller screens */  
+        font-size: 1rem; /* Further decrease paragraph font size */  
+    }  
+
+    .comman-btn {  
+        width: 100%; /* Full width button on mobile */  
+        font-size: 0.8rem; /* Further decrease button font size */  
+    }  
+} 

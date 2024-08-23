@@ -1,0 +1,118 @@
+/* coursestudy.css */  
+
+.course-study-page { 
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Space background image */  
+    background-size: cover;  
+    background-position: center;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 20px;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+.course-study-page img {  
+    max-width: 100%; /* Make the image responsive */  
+    height: auto; /* Maintain aspect ratio */  
+    border-radius: 8px; /* Rounded corners for the image */  
+    margin-bottom: 15px; /* Spacing below the image */  
+}  
+
+.course-study-page h1 {  
+    text-align: center;
+    font-size: 24px; /* Title size */  
+    color: #f8f4f4; /* Darker text for title */  
+    margin: 10px 0; /* Vertical spacing */  
+}  
+
+.course-study-page h4 {  
+    font-size: 18px; /* Description size */  
+    color: #f9f1f1; /* Slightly lighter text */  
+    text-align: center; /* Center the description */  
+    margin: 10px 0; /* Vertical spacing */  
+}  
+
+.course-study-page h5 {  
+    font-size: 16px; /* Subtitle size */  
+    color: rgb(86, 32, 7); /* Lighter text color */  
+    margin: 5px 0; /* Margin for spacing */  
+}  
+
+.course-study-page a {  
+    text-decoration: none; /* Remove underline from link */  
+    color: black; /* Bootstrap primary color */  
+    font-weight: bold; /* Make the link bold */  
+    margin-top: 20px; /* Space above the link */  
+}  
+
+.course-study-page h2:hover { 
+    color: #f8f4f4; 
+    text-decoration: none; /* Remove underline on hover  */
+    background: rgba(53, 44, 44, 0.59); /* Background color with opacity */ /* Light blue background on hover*/
+    padding: 5px; /* Optional: add padding for better clickable area  */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+
+/* coursestudy.css */  
+
+.container-study-page {  
+    background: rgba(232, 147, 147, 0.222); /* Background color with opacity */   
+    padding: 20px;  
+    border-radius: 10px; /* Rounded corners */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */  
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */  
+    max-width: 100%; /* Adjust width to ensure responsiveness */  
+}  
+
+/* Hover effect */  
+.container-study-page:hover {  
+    transform: translateY(-5px); /* Slight lift on hover */  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */  
+}
+
+
+/* Responsive Adjustments */  
+@media (max-width: 768px) {  
+    .course-study-page {  
+        padding: 15px; /* Adjust padding for smaller screens */  
+    }  
+
+    .course-study-page h2 {  
+        font-size: 20px; /* Smaller title size */  
+    }  
+
+    .course-study-page h4 {  
+        font-size: 16px; /* Smaller description size */  
+    }  
+
+    .course-study-page h5 {  
+        font-size: 14px; /* Smaller subtitle size */  
+    }  
+
+    .container-study-page {  
+        padding: 15px; /* Adjust the padding for smaller screens */  
+    }  
+}  
+
+@media (max-width: 576px) {  
+    .course-study-page {  
+        padding: 10px; /* Further adjust padding */  
+    }  
+
+    .course-study-page h2 {  
+        font-size: 18px; /* Even smaller title size */  
+    }  
+
+    .course-study-page h4 {  
+        font-size: 14px; /* Even smaller description size */  
+    }  
+
+    .course-study-page h5 {  
+        font-size: 12px; /* Even smaller subtitle size */  
+    }  
+
+    .container-study-page {  
+        padding: 10px; /* Adjust the padding for the container on smaller screens */  
+    }  
+} 

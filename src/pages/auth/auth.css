@@ -1,0 +1,141 @@
+/* auth.css */  
+.auth-page {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    background: url('../../assets/images/galaxy-3608029.jpg') no-repeat center center/cover; /* Background image */  
+}  
+
+.auth-form {  
+    background-color: rgba(15, 17, 36, 0.2); /* Almost fully transparent grayish tint */  
+    padding: 40px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    width: 300px; /* Fixed width for the form */  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on transform and box-shadow */  
+}  
+
+.auth-form:hover {  
+    transform: translateY(-5px); /* Move the form slightly up */  
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increase shadow when hovered */  
+    cursor: pointer; /* Change cursor to pointer */  
+}
+
+h2 {  
+    margin-bottom: 20px;  
+    text-align: center;  
+}  
+
+label {  
+    font-weight: bold;  
+    margin-bottom: 5px;  
+    display: block;  
+}  
+
+input {  
+    width: 90%;  
+    padding: 10px;  
+    margin-bottom: 20px;  
+    border: 1px solid rgb(245, 239, 239);  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    transition: border-color 0.3s;  
+}  
+
+input:focus {  
+    border-color: #007bff; /* Change border color when focused */  
+    outline: none;  
+}  
+
+.comman-btn {  
+    display: inline-block; /* Keep it as inline-block */  
+    padding: .75rem 0; /* Adjust left and right padding for better aesthetics */  
+    border-radius: 10rem; /* Rounded edges */  
+    color: #fff; /* Text color */  
+    text-transform: uppercase; /* Uppercase text */  
+    font-size: 1rem; /* Font size */  
+    letter-spacing: .15rem; /* Letter spacing */  
+    transition: all .3s; /* Smooth transition */  
+    position: relative; /* Positioning for the pseudo-elements */  
+    overflow: hidden; /* Prevent overflow */  
+    z-index: 1; /* Ensure button is on top */  
+    background-color: black; /* Base background color */  
+    margin: 20px 0; /* Center the button horizontally with some spacing */  
+
+    width: 100%; /* Make the button take the full width of its container */  
+    /* Removed max-width to use full width of its parent */  
+}  
+
+.comman-btn::before {  
+    content: '';   
+    position: absolute;   
+    bottom: 0;   
+    left: 0;   
+    width: 0%; /* Start with 0 width */  
+    height: 100%;   
+    background-color: #091e44; /* Darker background color */  
+    transition: all .3s; /* Smooth transition for width */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -1; /* Behind the text */  
+}  
+
+.comman-btn::after {  
+    content: '';  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%; /* Full width */  
+    height: 100%;  
+    background-color: gray; /* Background color on hover */  
+    border-radius: 10rem; /* Rounded edges */  
+    z-index: -2; /* Behind the button */  
+}  
+
+.comman-btn:hover {  
+    color: #fff; /* Change text color on hover */ 
+    cursor: pointer; 
+}  
+
+.comman-btn:hover::before {  
+    width: 100%; /* Expand the background on hover */  
+}  
+
+.comman-btn:active {  
+    transform: translateY(1px); /* Slight press effect */  
+}  
+
+p {  
+    color: #fff;
+    text-align: center;  
+}  
+
+
+p a {  
+    color: #eb9d6cfd;  
+    text-decoration: none;  
+}  
+
+p a:hover {  
+    text-decoration: underline;  
+}  
+
+/* Responsive adjustments */  
+@media (max-width: 768px) {  
+    .auth-form {  
+        width: 90%; /* Adjust width for smaller screens */  
+        padding: 20px;  
+    }  
+
+    .comman-btn {  
+        padding: 12px;  
+        font-size: 16px;  
+    }  
+}  
+
+.wrapper {  
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+}

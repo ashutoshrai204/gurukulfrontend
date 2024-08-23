@@ -1,0 +1,78 @@
+/* home.css */  
+@font-face {  
+    font-family: "Samarkan";  
+    src: url("../../assets/fonts/SAMAN___.TTF") format("truetype");  
+}   
+
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+}  
+
+.home {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    background-image: url('../../assets/images/galaxy-3608029.jpg'); /* Space background image */  
+    background-size: cover;  
+    background-position: center;  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+.home-content {  
+    background-color: rgba(255, 255, 255, 0.1);  
+    border-radius: 10px;  
+    padding: 40px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    max-width: 600px;  
+    transition: transform 0.3s ease; /* Smooth transition for transform */  
+}  
+
+.home-content:hover {  
+    transform: scale(1.05); /* Scale the element slightly on hover */  
+}   
+
+h1 {  
+    font-size: 2.5em;  
+    margin-bottom: 20px;  
+    color: #052a50;  
+}  
+
+.custom-font {  
+    font-family: "Samarkan", sans-serif;  
+    color: #533c07;  
+}  
+
+p {  
+    font-size: 1.2em;  
+    color: #052a50;  
+    margin-bottom: 30px;  
+}  
+
+.comman-btn {  
+    background-color: #28a745;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    padding: 10px 20px;  
+    font-size: 1em;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+}  
+
+.comman-btn:hover {  
+    background-color: #218838;  
+}  
+
+@media (max-width: 768px) {  
+    h1 {  
+        font-size: 2em;  
+    }  
+
+    p {  
+        font-size: 1em;  
+    }  
+}

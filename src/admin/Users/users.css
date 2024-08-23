@@ -1,0 +1,75 @@
+/* General Styles for the User Admin Page */  
+.users {  
+    padding: 20px;  
+    
+    display: flex;  
+    flex-direction: column; /* Ensure the title and table stack vertically */  
+    align-items: center; /* Center items horizontally */  
+}  
+
+.users table {  
+    width: 100%;  
+    max-width: 800px; /* Limit the width of the table for larger screens */  
+    border-collapse: collapse; /* Collapse borders for better styling */  
+    margin-top: 20px; /* Space above the table */  
+    margin: 0 auto; /* Center the table */  
+    background-color: rgba(186, 68, 68, 0.3); /* Red background with transparency */  
+    backdrop-filter: blur(8px); /* Blurry effect */  
+    border-radius: 10px; /* Rounded corners for the table */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */  
+}  
+  
+/* Table Header and Cell Styles */  
+.users th,  
+.users td {  
+    border: 2px solid white; /* Styled border */  
+    padding: 10px; /* Padding for table cells */  
+    text-align: left; /* Align text to the left */  
+    color: white; /* Font color for table elements */  
+}  
+  
+.users th {  
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for header */  
+    font-weight: bold; /* Bold font for headers */  
+}  
+  
+.users tr:nth-child(even) {  
+    background-color: rgba(255, 255, 255, 0.05); /* Alternate row color */  
+}  
+  
+.users tr:hover {  
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect */  
+}  
+  
+/* Responsive Design */  
+@media (max-width: 768px) {  
+    .users table {  
+        font-size: 14px; /* Adjust font size for smaller screens */  
+    }  
+    
+    .users th,  
+    .users td {  
+        padding: 8px; /* Smaller padding for compact view */  
+    }  
+    
+    .comman-btn {  
+        font-size: 12px; /* Smaller font size for buttons */  
+        padding: 5px 10px; /* Reduce button size */  
+    }  
+}  
+  
+@media (max-width: 480px) {  
+    .users table {  
+        font-size: 12px; /* Further adjust font size */  
+    }  
+    
+    .users th,  
+    .users td {  
+        padding: 6px; /* Further reduce padding */  
+    }  
+    
+    .comman-btn {  
+        width: 100%; /* Full width buttons on small screens */  
+        padding: 8px; /* Adjust the button padding */  
+    }  
+}

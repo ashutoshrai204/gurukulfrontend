@@ -1,0 +1,46 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+}  
+
+.about {  
+    /* Example background image; change URL to your space-themed image */  
+    background-image: url('../../assets/images/galaxy-3608029.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+.about-content {  
+    font-weight: bold;
+    background-color: rgba(44, 44, 46, 0.35); /* Dark blue with transparency */  
+    border-radius: 10px;  
+    padding: 2rem;  
+    text-align: center;  
+    width: 80%; /* Adjust the width as needed */  
+    max-width: 600px;  
+    color: #f7f7faf9; /* White text for contrast */  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);  
+}  
+
+.about-content h2 {  
+    margin-bottom: 1rem;  
+}  
+
+.about-content p {  
+    font-weight: bold;
+    color: bisque;
+    line-height: 1.6; /* Improve readability */  
+}  
+
+/* Hover effects */  
+.about-content:hover {  
+    transform: translateY(-5px); /* Slight upward motion */  
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */  
+    cursor: pointer; /* Change cursor to pointer */  
+}

@@ -1,0 +1,66 @@
+/* footer.css */  
+@font-face {  
+    font-family: "Samarkan";  
+    src: url("../../assets/fonts/SAMAN___.TTF") format("truetype");  
+  }  
+
+  footer {  
+    background: linear-gradient(90deg, #0b0b0b, #01050b);  
+    color: white;  
+    padding: 20px 0;  
+    z-index: 1001; /* Higher than sidebar */  
+    position: relative; /* Allows z-indexing without being fixed */  
+    width: 100%; /* Ensures it spans the full width */  
+    bottom: 0; /* Aligns at the bottom of the parent container */  
+} 
+
+.footer-content {  
+    max-width: 1200px; /* Limit the maximum width for better readability */  
+    margin: 0 auto; /* Center the content */  
+    text-align: center; /* Center text in footer */  
+}  
+
+.footer-content p {
+    color: #ccc;  
+    margin: 0; /* Remove default margin */  
+    font-size: 1em; /* Font size for paragraph */  
+}  
+.custom-fontt {  
+    color: #ccc;
+    font-family: "Samarkan", sans-serif;  
+  }
+
+.footer-content a {  
+    color: #00aaff; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+.footer-content a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+.social-links {  
+    margin-top: 10px; /* Space between paragraph and social links */  
+}  
+
+.social-links a {  
+    color: white; /* Icon color */  
+    font-size: 1.5em; /* Size for icons */  
+    margin: 0 10px; /* Margin between icons */  
+    transition: color 0.3s; /* Transition effect for hover */  
+}  
+
+.social-links a:hover {  
+    color: #00aaff; /* Change color on hover */  
+}  
+
+/* Responsive design adjustments */  
+@media (max-width: 768px) {  
+    .footer-content p {  
+        font-size: 0.9em; /* Smaller font size on smaller screens */  
+    }  
+
+    .social-links a {  
+        font-size: 1.2em; /* Smaller icon size on smaller screens */  
+    }  
+}
